@@ -5,8 +5,6 @@ eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
-    healthcheck:
-      enabled: true
     serviceUrl:
       defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
 spring:
