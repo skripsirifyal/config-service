@@ -1,4 +1,18 @@
+---
+eureka:
+  instance:
+    hostname: guidance-config-service.herokuapp.com
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
 spring:
+  config:
+    activate:
+      on-profile: heroku
   application:
     name: config-service
   cloud:
@@ -10,14 +24,3 @@ spring:
 
 server:
   port: 8888
-
-eureka:
-  instance:
-    hostname: guidance-config-service.herokuapp.com
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    healthcheck:
-      enabled: true
-    serviceUrl:
-      defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
