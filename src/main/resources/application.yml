@@ -7,13 +7,6 @@ spring:
         git:
           uri: https://github.com/skripsirifyal/config-repo
           skip-ssl-validation: true
-    discovery:
-      enabled: true
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
 
 server:
   port: 8888
