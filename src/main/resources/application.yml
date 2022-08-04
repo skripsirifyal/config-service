@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/skripsirifyal/config-repo
+          skip-ssl-validation: true
+    discovery:
+      enabled: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+server:
+  port: 8888
+
+eureka:
+  instance:
+    hostname: guidance-config-service.herokuapp.com
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
