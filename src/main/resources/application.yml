@@ -16,7 +16,6 @@ spring:
           uri: https://github.com/skripsirifyal/config-repo
           skip-ssl-validation: true
           clone-on-start: true
-          search-paths: '{application}'
           delete-untracked-branches: true
         bootstrap: true
   security:
@@ -26,3 +25,4 @@ spring:
 
 server:
   port: 8888
+
