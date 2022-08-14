@@ -8,7 +8,7 @@ eureka:
       defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
 spring:
   application:
-    name: config-service
+    name: configservice
   cloud:
     config:
       server:
