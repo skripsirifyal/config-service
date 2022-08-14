@@ -20,6 +20,7 @@ spring:
           uri: https://github.com/skripsirifyal/config-repo
           skip-ssl-validation: true
           clone-on-start: true
+        bootstrap: true
   security:
     user:
       name: root
