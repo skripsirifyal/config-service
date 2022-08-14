@@ -1,4 +1,4 @@
----
+ ---
 eureka:
   instance:
     hostname: guidance-config-service.herokuapp.com
@@ -19,6 +19,10 @@ spring:
         git:
           uri: https://github.com/skripsirifyal/config-repo
           skip-ssl-validation: true
+  security:
+    user:
+      name: root
+      password: 4c4d3mIc5ec12eT
 
 server:
   port: 8888
