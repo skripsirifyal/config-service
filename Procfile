@@ -1,1 +1,1 @@
-web: java -Dspring.profiles.active=heroku -Dserver.port=$PORT -jar build/libs/config-service-0.0.1.jar
+web: java -Dserver.port=$PORT -jar build/libs/config-service-0.0.1.jar
