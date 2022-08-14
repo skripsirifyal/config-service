@@ -1,3 +1,8 @@
+spring:
+  security:
+    user:
+      name: root
+      password: 4c4d3mIc5ec12eT
 ---
 eureka:
   instance:
@@ -8,6 +13,8 @@ eureka:
     serviceUrl:
       defaultZone: https://guidance-discovery-service.herokuapp.com/eureka/
 spring:
+  profiles:
+    active: heroku
   config:
     activate:
       on-profile: heroku
@@ -24,7 +31,7 @@ spring:
   security:
     user:
       name: root
-      password: 4c4d3mIc5ec12eT
+      password: 4c4d3mIc5ec12eTs
 
 server:
   port: 8888
