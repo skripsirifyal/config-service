@@ -1,6 +1,10 @@
 eureka:
   instance:
     hostname: guidance-config-service.herokuapp.com
+    metadata-map:
+      user: root
+      password: 4c4d3mIc5ec12eT
+      config-path: /config-repo
   client:
     fetch-registry: true
     register-with-eureka: true
@@ -13,7 +17,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/skripsirifyal/config-repo
+          uri: https://github.com/skripsirifyal/config-repo.git
           skip-ssl-validation: true
           clone-on-start: true
           delete-untracked-branches: true
